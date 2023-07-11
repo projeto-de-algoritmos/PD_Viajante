@@ -16,7 +16,7 @@ const defaultValueTask = {
 
 function App() {
   const [task, setTask] = useState(defaultValueTask)
-  const [capacity, setCapacity] = useState(0)
+  const [capacity, setCapacity] = useState(10)
   const [tasks, setTasks] = useState<Task[]>([])
 
   const [open, setOpen] = useState(false);
@@ -31,7 +31,6 @@ function App() {
   };
 
   const result = knapsack(tasks, capacity)
-  console.log(result)
 
   return (
     <>
@@ -41,7 +40,7 @@ function App() {
       <h1 className='text'>Mochila do Viajante</h1>
       
       <Paper>
-        <TextField defaultValue={10} onChange={(e) => setCapacity(parseInt(e.target.value))} label="Qual a capacidade da sua mochila?" type='number' variant="standard" style={{ margin: 6}}/>
+        <TextField defaultValue={10} onChange={({ target }) => !Number.isNaN(target.value) ? setCapacity(parseInt(target.value)) : setCapacity(0)} label="Qual a capacidade da sua mochila?" type='number' variant="standard" style={{ margin: 6}}/>
       </Paper>
       
       <div className='items-list'>

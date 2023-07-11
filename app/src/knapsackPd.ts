@@ -17,7 +17,12 @@ interface Item {
   
     for (let i = 0; i <= n; i++) {
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-      dp[i] = new Array(capacity + 1).fill(0);
+      console.log(capacity)
+      if(Number.isNaN(capacity)){
+        dp[i] = new Array(1).fill(0);
+      } else {
+        dp[i] = new Array(capacity + 1).fill(0);
+      }
     }
   
     for (let i = 1; i <= n; i++) {
