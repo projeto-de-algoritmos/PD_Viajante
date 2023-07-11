@@ -8,6 +8,7 @@
 .logo {
   height: 16em;
   padding: 1.5em;
+  margin-bottom: 1rem;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -38,7 +39,7 @@
 
 .items-list {
   
-  margin-top: 100px;
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
   width: 100%;
