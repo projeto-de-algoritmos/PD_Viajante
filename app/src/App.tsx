@@ -7,10 +7,10 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className='logo_icon'>
         <img src='aviao.png'  className="logo react" alt="React logo" />
       </div>
-      <h1>Mochila do Viajante</h1>
+      <h1 className='text'>Mochila do Viajante</h1>
 
       <div className='items-list'>
         <Paper elevation={4} style={{ padding: 10, margin: 5, display: 'flex', flexDirection: 'column', alignContent: 'space-around'}}>
@@ -24,14 +24,19 @@ function App() {
         <Paper style={{ width: '100%'}}>
           <List>
             <ListItem>
-              <ListItemText
+              <ListItemText className="add"
                 primary="Itens adicionados"
               />
             </ListItem>
             <Divider />
           </List>
         </Paper>
+
       </div>
+
+      <div>
+          <img src='viajante.png' height={400} className='viajante' />
+        </div>
     </>
   )
 }
