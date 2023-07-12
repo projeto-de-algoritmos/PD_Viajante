@@ -29,7 +29,7 @@ Pré-requisitos:
 3. Yarn: npm install -g yarn
 
 ## Projeto
-[Link para o projeto](https://github.com/projeto-de-algoritmos/PD_Viajante)
+[Link para o projeto](https://projeto-de-algoritmos.github.io/PD_Viajante/)
 
 ## Video Explicação
 [Link para o video explicação](./video_explicativo.mp4)
