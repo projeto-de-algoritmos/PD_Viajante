@@ -32,7 +32,7 @@ Pré-requisitos:
 [Link para o projeto](https://github.com/projeto-de-algoritmos/PD_Viajante)
 
 ## Video Explicação
-[Link para o video explicação]()
+[Link para o video explicação](./video_explicativo.mp4)
 
 
 
